@@ -1,4 +1,4 @@
-package Myapp
+package myapp
 
 import (
 	"encoding/json"
