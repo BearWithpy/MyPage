@@ -24,7 +24,7 @@ func (f *fooHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
-		fmt.Fprint(w, err)
+		fmt.Fprint(w, "Bad Request: ", err)
 		return
 	}
 	user.CreatedAt = time.Now()
